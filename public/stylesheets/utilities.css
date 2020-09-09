@@ -1,0 +1,56 @@
+/* layout */
+.container{
+width: 70%;
+margin: auto;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.flex-around{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* buttons */
+.btn{
+    border: none;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: #333;
+    display: inline-block;
+    color: #fff;
+    margin: 0.2rem;
+}
+
+.btn-form{
+    width: 80%;
+    text-align: center;
+    padding: .4rem 0;
+    background: rgb(9, 196, 9);
+}
+.btn-form:hover{
+background: rgb(2, 122, 2);   
+}
+
+.btn-primary{
+    background: green;
+    color: white;
+}
+
+/* backgrounds */
+.bg-dark{
+    background: rgb(37, 37, 37);
+}
+
+/* text */
+.text-primary{
+    color: rgb(9, 196, 9);
+}

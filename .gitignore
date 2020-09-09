@@ -1,0 +1,8 @@
+# dependencis
+/node_modules
+
+#local database
+mongo.exe
+mongod.exe
+
+seeds.js

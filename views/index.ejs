@@ -1,0 +1,38 @@
+<%- include('partials/header') %> 
+
+<!-- Showcase -->
+<section class="main-showcase">
+    <div style="height: 100%;"  class="container  flex-center">
+        <h1>Welcome to Yelp<span class="text-primary">Camp!</span></h1>
+        <p>View campgrounds from all over the world.</p>
+        <a class="btn" href="/campgrounds/new">Add Campground</a>
+    </div>
+</section>
+<main>
+    <section style="background: #fff; border: none;" class="options ">
+        <div class="container flex-around">
+            <p style="font-size: 0.8rem;">Sort by</p>
+            <form action="#">
+                <input type="text" name="seach" id="" placeholder="Search Campgrounds...">
+                <button class="btn-opt">Search</button>
+            </form>
+        </div>
+    </section>
+        <section class="container">
+            <div class="campgrounds">
+                <% campgrounds.forEach(function(campground){ %>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="<%= campground.image %> " alt="">
+                        </div>
+                        <div class="card-content container">
+                            <h1><%= campground.name %> </h1>
+                        </div>
+                    </div>
+            <%  }); %> 
+            
+            </div>
+        </section>
+</main>
+
+<%- include('partials/footer') %> 
