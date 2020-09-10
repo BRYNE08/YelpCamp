@@ -5,7 +5,7 @@ var app = express();
 
 var indexRoutes            = require("./routes/index"),    
     campgroundRoutes       = require("./routes/campgrounds");
- const seedDB = require('./seeds');
+//  const seedDB = require('./seeds');
 
 // mongoose.connect("mongodb://localhost/yelpcamp");
 
@@ -19,7 +19,7 @@ mongoose.connection.on('connected', () => {
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
-seedDB();
+// seedDB();
 
 // requiring routes
 app.use(indexRoutes);
