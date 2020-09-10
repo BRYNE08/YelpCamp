@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<section class="container">
+    <div class="form-container login-form">
+        <div class="image-container">
+            <h1>Sign up</h1>
+        </div>
+        <div class="form-group">
+            <p>Hello, welcome.</p>
+            <form action="/campgrounds" method="POST">
+                <input type="text"name="Campground[image]" id="" placeholder="Enter username">
+                <input type="password" name="Campground[name]" placeholder="Enter password">
+                <button class="btn btn-form" href="/campgrounds">Sign up</a> </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>  

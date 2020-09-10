@@ -1,47 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/utilities.css">
-    <link rel="stylesheet" media="screen and (max-width: 640px)" href="/stylesheets/mobile.css">
-    <title>YelpCamp | Login</title>
-</head>
-<body>
-    <header class="main-header flex-around bg-dark" >
-        <div class="container main-header">
-    
-            <div class="nav-2" >
-                <h1><a href="/campgrounds">Yelp<span class="text-primary">Camp!</span></a></h1>
-                <div  class="main-nav">
-                <ul>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">New</a></li>
-                </ul>
+<%- include('partials/header') %> 
+
+    <section class="container">
+        <div class="form-container login-form">
+            <div class="image-container">
+                <h1>Login</h1>
             </div>
+            <div class="form-group">
+                <p>Hello, welcome back.</p>
+                <form action="/campgrounds" method="POST">
+                    <input type="text"name="Campground[image]" id="" placeholder="Enter username">
+                    <input type="password" name="Campground[name]" placeholder="Enter password">
+                    <button class="btn btn-form" href="/campgrounds">Login</a> </button>
+                </form>
+                <div>
+                    <ul class="account-opt">
+                        <li>Don't have an account? <span><a href="#">Create account.</a></span></li>
+                        <li><a href="#">Forgot password?</a></li>
+                    </ul>
+                </div>
             </div>
-                <nav class="main-nav">
-                <ul>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                </ul>
-            </div>
-            </nav>
-        </div>
-    </header>
-    <section class="form">
-        <div class="login-form">
-            <div class="form-image">Hello</div>
-            <form action="">
-                <label for="username">Username</label>
-                <input type="text" name="username" placeholder="Enter username" required>
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Enter password" required>
-                <input type="submit">
-            </form>
         </div>
     </section>
-</body>
-</html>
+
+<%- include('partials/footer') %> 
