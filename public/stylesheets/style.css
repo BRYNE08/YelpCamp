@@ -136,6 +136,7 @@ align-items: center;
     padding: 0.17rem;
     margin: 0;
     font-size: 0.7rem;
+    font-style: italic;
     border: 1px #ddd solid;
     border-top-left-radius:  5px;
     border-bottom-left-radius:  5px;
