@@ -109,21 +109,82 @@ ul{
     font-size: 3rem;
     line-height: 2rem;
     margin-bottom: 1rem;
+
+    
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    backface-visibility: hidden;
 }
 
 .main-showcase p{
     color: white;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    backface-visibility: hidden;
 }
 .main-showcase a{
     color: #fff;
     background: rgb(9, 196, 9);
 }
+
+
+.btn-animated{
+    animation-name: moveInBottom;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: .75s;
+    backface-visibility: hidden;
+}
+}
 .main-showcase a:hover,
 .main-showcase a:focus{
     background: rgb(2, 122, 2);
 }
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
 
 /* options-bar */
 .options form{
